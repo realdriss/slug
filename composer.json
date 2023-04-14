@@ -1,0 +1,23 @@
+{
+    "name": "realdriss/slug",
+    "description": "Slug/Permalink",
+    "type": "package",
+    "autoload": {
+        "psr-4": {
+            "RealDriss\\Slug\\": "src"
+        }
+    },
+    "require": {
+        "realdriss/platform": "*@dev"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RealDriss\\Slug\\Providers\\SlugServiceProvider"
+            ],
+            "aliases": {
+                "SlugHelper": "RealDriss\\Slug\\Facades\\SlugHelperFacade"
+            }
+        }
+    }
+}
